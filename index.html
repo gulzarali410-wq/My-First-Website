@@ -1,1 +1,134 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maydaan Properties | Mehar</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#f5f7fb;color:#17243b;line-height:1.6}
+header{background:#071b35;color:white;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.logo{font-size:25px;font-weight:bold;color:#e7c36b}
+.logo small{display:block;font-size:11px;letter-spacing:3px;color:white}
+nav{display:flex;flex-wrap:wrap;gap:16px}
+nav a{color:white;text-decoration:none;font-size:14px}
+nav a:hover{color:#e7c36b}
+.hero{padding:85px 7%;color:white;text-align:center;background:linear-gradient(90deg,rgba(4,20,42,.92),rgba(5,31,58,.65)),url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=85') center/cover}
+.hero h1{font-size:clamp(32px,5vw,55px);line-height:1.2;margin-bottom:18px}
+.hero h1 span{color:#edce7c}
+.hero p{max-width:700px;margin:0 auto 25px;font-size:18px}
+.btn{display:inline-block;text-decoration:none;padding:12px 22px;border-radius:5px;margin:5px;font-weight:bold}
+.gold{background:#e7c36b;color:#071b35}
+.outline{border:1px solid white;color:white}
+section{padding:48px 6%}
+.heading{text-align:center;margin-bottom:28px}
+.heading h2{font-size:30px;color:#092344}
+.heading p{color:#68758a}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
+.card{background:white;border-radius:10px;overflow:hidden;box-shadow:0 5px 22px #10274412}
+.card img{width:100%;height:175px;object-fit:cover}
+.card-content{padding:20px}
+.card h3{color:#092344;margin-bottom:8px}
+.card p{color:#647086;font-size:14px;margin-bottom:14px}
+.card a{color:#8b691c;font-weight:bold;text-decoration:none}
+.about{background:#eaf0f7;text-align:center}
+.about p{max-width:800px;margin:12px auto}
+.contact{background:#071b35;color:white;text-align:center}
+.contact h2{color:#e7c36b;margin-bottom:12px}
+.contact p{margin:8px}
+footer{background:#041225;color:#cbd4e1;text-align:center;padding:18px;font-size:13px}
+@media(max-width:600px){header{justify-content:center;text-align:center}nav{justify-content:center}.hero{padding:65px 5%}section{padding:38px 5%}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">MAYDAAN PROPERTIES
+    <small>AND REAL ESTATES · MEHAR</small>
+  </div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#properties">Properties</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <h1>Your Dream Property,<br><span>Our Trusted Commitment</span></h1>
+  <p>Residential plots, beautiful homes, commercial shops and agricultural land — buy, sell or rent with confidence.</p>
+  <p lang="sd">?????? ????? ?? ?????? ????? ???? ???? ???!</p>
+  <a class="btn gold" href="#properties">Explore Properties</a>
+  <a class="btn outline" href="#contact">Contact Us</a>
+</section>
+
+<section id="properties">
+  <div class="heading">
+    <h2>Explore Our Properties</h2>
+    <p>Find the right property for your needs and future.</p>
+  </div>
+  <div class="grid">
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=700&q=80" alt="Residential plot">
+      <div class="card-content">
+        <h3>Residential Plots</h3>
+        <p>Find a suitable plot to build your dream home.</p>
+        <a href="#contact">Buy / Sell Plots ?</a>
+      </div>
+    </article>
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=700&q=80" alt="Beautiful home">
+      <div class="card-content">
+        <h3>Homes</h3>
+        <p>Explore homes for buying, selling and renting.</p>
+        <a href="#contact">Explore Homes ?</a>
+      </div>
+    </article>
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=700&q=80" alt="Commercial building">
+      <div class="card-content">
+        <h3>Commercial Shops</h3>
+        <p>Discover commercial spaces for your business.</p>
+        <a href="#contact">Explore Shops ?</a>
+      </div>
+    </article>
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=700&q=80" alt="Agricultural land">
+      <div class="card-content">
+        <h3>Agricultural Land</h3>
+        <p>Explore agricultural land and investment options.</p>
+        <a href="#contact">Explore Land ?</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="heading">
+    <h2>About Maydaan Properties</h2>
+  </div>
+  <p><strong>MAYDAAN PROPERTIES AND REAL ESTATES MEHAR</strong> helps customers explore property opportunities for buying, selling and renting.</p>
+  <p>Our aim is to provide professional service, clear communication and dependable support throughout your property journey.</p>
+  <p><strong>Location:</strong> Near Old NADRA, Betto Road, Mehar City, District Dadu, Sindh, Pakistan.</p>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Let's Find Your Property</h2>
+  <p>Contact us for property details, buying, selling or rental enquiries.</p>
+  <p><strong>Call:</strong> 0315 9049572</p>
+  <p><strong>WhatsApp:</strong> 0325 8444514</p>
+  <p><strong>Email:</strong> gulzarali410@gmail.com</p>
+  <a class="btn gold" href="tel:03159049572">Call Now</a>
+  <a class="btn gold" href="https://wa.me/923258444514" target="_blank" rel="noopener">WhatsApp Us</a>
+  <a class="btn outline" href="mailto:gulzarali410@gmail.com">Send Email</a>
+</section>
+</main>
+
+<footer>
+  © 2026 Maydaan Properties and Real Estates Mehar. All rights reserved.
+</footer>
+
+</body>
+</html>
