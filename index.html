@@ -12,6 +12,7 @@
 @media(max-width:900px){.navlinks{display:none;position:absolute;top:88px;left:12px;right:12px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);padding:18px;border-radius:12px;flex-direction:column;align-items:stretch}.navlinks.open{display:flex}.menu-toggle{display:block}.nav>.btn{display:none}.hero-inner{grid-template-columns:1fr;padding-top:48px}.hero-art{min-height:230px}.hero-art img{max-height:300px}.floating{left:10%;bottom:0}.trustbar{margin:0 16px;grid-template-columns:repeat(2,1fr)}.filters{grid-template-columns:repeat(3,1fr)}.property-grid{grid-template-columns:repeat(2,1fr)}.category-grid{grid-template-columns:repeat(2,1fr)}.about-grid,.contact-grid{grid-template-columns:1fr}.owner-photo{max-width:300px}.testimonial-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.topbar{justify-content:center;text-align:center}.brand{min-width:0}.brand img{width:54px;height:54px}.brand b{font-size:13px}.brand small{font-size:8px}.nav{padding:8px 14px}.hero-inner{padding:38px 18px 52px}.hero h1{font-size:38px}.hero p{font-size:15px}.hero-art{min-height:210px}.trustbar{padding:12px;gap:3px}.trustitem{padding:5px 2px;gap:7px}.trusticon{width:34px;height:34px;font-size:17px}.trustitem b{font-size:11px}.trustitem small{font-size:10px}.section{padding:48px 16px}.section-head{display:block}.section-head .btn{margin-top:15px}.category-grid,.property-grid,.testimonial-grid{grid-template-columns:1fr}.category{padding:20px}.filters{grid-template-columns:1fr 1fr}.filters .field:first-child{grid-column:1/-1}.contact-form,.admin-form{grid-template-columns:1fr}.contact-form .wide{grid-column:auto}.checklist{grid-template-columns:1fr}.property-photo{height:210px}}
 </style>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
 <div class="topbar"><span>📍 Near Old NADRA, Betto Road, Mehar, Sindh</span><span>Call: <a href="tel:+923159049572">0315 9049572</a> &nbsp; | &nbsp; WhatsApp: <a href="https://wa.me/923258444514" target="_blank" rel="noopener">0325 8444514</a></span></div>
@@ -79,5 +80,19 @@ $("exportData").onclick=()=>{const blob=new Blob([JSON.stringify(listings,null,2
 $("clearDemo").onclick=()=>{if(confirm("Restore the original sample listings? This will replace the current browser listings.")){listings=initialListings.slice();save();render();toast("Sample listings restored.")}};
 $("contactForm").addEventListener("submit",e=>{e.preventDefault();const msg=`Maydaan Properties Website Enquiry\\nName: ${$("clientName").value}\\nPhone: ${$("clientPhone").value}\\nInterest: ${$("clientInterest").value}\\nArea: ${$("clientArea").value}\\nMessage: ${$("clientMessage").value}`;window.open("https://wa.me/923258444514?text="+encodeURIComponent(msg),"_blank","noopener")});
 $("menuToggle").onclick=()=>$("navlinks").classList.toggle("open");document.querySelectorAll("#navlinks a").forEach(a=>a.onclick=()=>$("navlinks").classList.remove("open"));$("year").textContent=new Date().getFullYear();render();
+</script>
+<!-- Supabase Connection -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  const MAYDAAN_SUPABASE_URL =
+    'https://pmssvpqdxspebaoqkjdd.supabase.co';
+
+  const MAYDAAN_SUPABASE_KEY =
+    'YAHAN_APNI_PUBLISHABLE_KEY_PASTE_KAREIN';
+
+  const maydaanSupabase = window.supabase.createClient(
+    MAYDAAN_SUPABASE_URL,
+    MAYDAAN_SUPABASE_KEY
+  );
 </script>
 </body></html>
